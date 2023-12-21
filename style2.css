@@ -1,0 +1,329 @@
+
+#header
+{
+    background-color:bisque;
+}
+#personal
+{
+    /* overflow: hidden; */
+    height: 720px;
+    background-color:white;
+    width: 90%;
+    top: 390px;
+    left: 50%;
+    transform: translate(-50%, -53%);
+    position: relative;
+    border-radius: 25px;
+}
+#background
+{
+    background-image: url(IMG/menu-quan-cafe-1.jpg);
+    height: 400px;
+    width: 90%;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    position: absolute;
+    background-size: cover;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#ava
+{
+    float:right;
+    width: 200px;
+    height: 200px;
+    background-color:#EEA460;
+    border-radius: 50%;
+    position: absolute;
+    top:10px;
+  
+    background-image: url(IMG/miniMeow.png);
+      background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top; 
+top:350px;
+left: 100px;
+    /* transform: translate(-50%, -50%); */
+}
+#descript
+{
+    position: absolute;
+    top:430px;
+left: 360px;
+transform: scale(1.4);
+}
+
+.info-content
+{
+    /* position: absolute; */
+}
+#descript2
+{
+    position: absolute;
+    top:500px;
+left: 1000px;
+transform: scale(1.4);
+}
+#loca
+{
+    position: absolute;
+    top:650px;
+left: 180px; 
+transform: scale(1.4);
+}
+#space
+{
+    /* height: 1000px; */
+    /* width: 20%; */
+    /* top: 550px; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -53%); */
+    position: relative;
+    border-radius: 25px;
+height:1100px;
+    /* background-color: black; */
+}
+
+#intro-imgshop
+{
+
+    width: 24%;
+    float:left;
+    position: relative;
+    left:1%;
+        top:15px;
+        right: 2px;
+        border-radius: 25px;
+        /* border: 1px solid black; */
+}
+/* #space-content
+{
+    background-color: blue;
+    width: 69%;
+    position: relative;
+    float:right;
+    top:15px;
+    right: 1%;
+    height: 1000px;
+} */
+.intro
+{
+    /* height: 200px; */
+        background-color: white;
+          border-radius: 25px;
+          border: 1px solid black;
+          position:sticky;
+          right:0;
+          top:0px;
+          
+          margin-left: 10px;
+          margin-top: 10px;
+}
+.intro h2
+{
+    position: relative;
+    top:15px;
+    left:5px;
+}
+
+.intro p
+{
+    font-size: 20px;
+     position: relative;
+    left:5px;
+    right:5px;
+    width: 90%;
+}
+.iconshop 
+{
+   background-image: url(IMG/phan-biet-bot-matcha-va-bot-tra-xanh-cach-dung-va-7.jpg); 
+        background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position:right; */
+    height: 300px;
+    /* left:100px; */
+    position: relative;
+width:100%;
+}
+.mid
+{
+    position: absolute;
+    left:350px;
+    right:0;
+}
+
+.chip i
+{
+    position: absolute;
+    left:60px;
+    top:65px;
+}
+.modal-container
+{
+    background-color: white;
+    width: 500px;
+    border-radius: 25px;
+    transform: scale(0.9);
+}
+#modal
+{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+   
+}
+.modal-heading h2
+{
+    float:left;
+    width: 50%;
+    position: relative;
+    top:40px;
+    left:10px;
+}
+.close
+{
+    /* background-image: url(img/close1-removebg-preview.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:110px;
+    width: 130px; */
+    /* background-position:right; */
+  /* float:right; */
+  /* top:0; */
+  /* position: relative; */
+  float:right;
+  width: 50%;
+  cursor: pointer;
+  /* top:150px; */
+  /* left:770px; */
+  left:140px;
+  top:-20px;
+  position:relative;
+  transform: scale(0.5);
+  /* top:0; */
+  /* position: relative; */
+}
+.modal-body .rating
+{
+    position: relative;
+    left:50px;
+}
+.rating li 
+{
+    float:left;
+    list-style-type: none;
+    padding-left: 10px;
+}
+.rating li 
+{
+    text-decoration: none;
+    /* color:black; */
+
+}
+.rate
+{
+    color:black;
+}
+.rate:hover
+{
+    cursor: pointer;
+}
+.rating li i
+{
+   font-size: 70px;
+}
+
+.comment textarea
+{
+    width:90%;
+    position: relative;
+    left:20px;
+    height:200px;
+    border-radius: 5px;
+}
+
+.chip2,.chip3,.chip4 {
+    display: inline-block;
+    padding: 0 25px;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 40px;
+    background-color: white;
+    border: 2px solid  #EEA460;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .chip2:hover,.chip3:hover,.chip4:hover
+  {
+      background-color:bisque;
+  }
+  .chip2 p,  .chip3 p, .chip4 p
+  {
+    width: 70%;
+    float:left;
+    font-size: 25px;
+   color:#EEA460;
+
+  }
+  .chip3 p
+  {
+    color: blueviolet;
+  }
+  .chip3 
+  {
+    border: 2px solid  blueviolet;
+  }
+  .chip2 img, .chip3 img, .chip4 img
+  {
+    width:30%;
+    float:right;
+    padding-top: 5px;
+  }
+ 
+.label, .label1
+{
+    margin-left: 5px;
+    width: 48%;
+    float:left;
+
+}
+.label1
+{
+    width: 80%;
+    float:left;
+}
+.chip2 img
+{
+    transform: scale(1.2);
+}
+.chip4 img
+{ padding-top: 2px;
+    transform: scale(0.9);
+}
+.submit
+{
+    /* margin-top: 100px; */
+    position: relative;
+    float:right;
+    right:30px;
+    width:100px;
+    height:50px;
+   margin-bottom: 10px;
+
+}
+.submit button
+{
+    width: 100%;
+    height:100%;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #EEA460;
+    font-size: 20px;
+}

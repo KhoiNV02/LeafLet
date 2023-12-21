@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Icon/themify-icons-font/themify-icons/themify-icons.css">
+    <!-- <link rel="stylesheet" href="leaflet/leaflet.css" />
+<script src="leaflet/leaflet.js"></script> -->
+<script src="leaflet (1)2/leaflet.js"></script>
+<link rel="stylesheet" href="leaflet (1)2/leaflet.css">
+<!-- <script src="leaflet-routing-machine-3.2.12/leaflet-routing-machine-3.2.12/src/index.js"></script> -->
+<!-- <script src="leaflet/leaflet-src.esm.js"></script>
+<script src="leaflet/leaflet-src.esm.js.map"></script>
+<script src="leaflet/leaflet-src.js.map"></script>
+<script src="leaflet/leaflet.js.map"></script> -->
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+  
+  <!--
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>  -->
+
+<title>Document</title>
+</head>
+<body>
+    <div id="Main">
+        <div id="header">
+            <div id="logo">
+                <img src="img/Capture-removebg-preview.png" alt="" height="">
+            </div>
+
+            <div id="nav">
+                <ul class="navi">
+                    <li><a href="">
+                        <div class="icon">
+                            <img src="IMG/home-removebg-preview.png" alt="" style="position: relative; top:5px;" >
+                        </div>
+                        <div class="name">
+                            <p>Home Page</p>
+                        </div>
+                    </a></li>
+                    <li><a href="">
+                        <div class="icon">
+                            <img src="img/search-removebg-preview.png"  alt="" >
+                        </div>
+                        <div class="name">
+                            <p style="padding-top: 10px;">Trip ideas</p>
+                        </div>
+                    </a></li>
+                    <li><a href="">
+                        <div class="icon">
+                            <img src="img/tourguide-removebg-preview.png" alt="">
+                        </div>
+                        <div class="name">
+                            <p>Tour Guide</p>
+                        </div>
+                    </a></li>
+                    <li><a href="">
+                        <div class="icon">
+                            <img src="img/journey-removebg-preview.png" alt="">
+                        </div>
+                        <div class="name">
+                            <p>Journey</p>
+                        </div>
+                    </a></li>
+                </ul>       
+                
+            </div>
+
+            <div id="avatar">
+
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div id="banner">
+            <div id="slogan">
+                
+            </div>
+				<div class="where">
+                    <i class="ti-location-pin"> </i>
+				<input class="input-search" type="text" placeholder="Tìm kiếm các địa điểm quán nước, loại thức uống yêu thích">
+	
+				</div>
+        </div>
+
+        <div id="container">
+            <div id="filter">
+                <div id="di" class="chip">
+                    Vị trí hiện tại
+                  </div>
+                  <div id="vitrii" class="chip">
+                    Gần đây nhất
+                  </div>
+                  <div id="danhgia" class="chip">
+                   Nhiều đánh giá nhất
+                  </div>
+                
+            </div>
+            <div id="shop-map">
+                <div id="shops">
+                    <!-- shop1 -->
+                    <div class="shop so">
+                      <div class="imgshop">
+                            <img src="IMG/coffee.2-810x524-1.jpg" alt="">
+                      </div>
+                      
+                     <div class="shop-body">
+                          <h3 class="shop-heading">
+                             Cà phê thị (cơ sở 2)
+                          </h3>
+      
+                          <div class="info">
+                              <div class="img-info">
+                                  <img src="IMG/direction-removebg-preview.png" alt="">
+                              </div>
+                              <div class="info-content">
+                                  <p>1.8km</p>
+                              </div>
+                              <div class="clear"></div>
+                              <div class="img-info">
+                                  <img src="IMG/like-removebg-preview.png" alt="">
+                              </div>
+                              <div class="info-content">
+                                  <p>90.9% (214 đánh giá)</p>
+                              </div>
+                              <div class="clear"></div>
+                              <div class="img-info">
+                                  <img src="IMG/money.PNG" height="58px" alt="">
+                              </div>
+                              <div class="info-content">
+                                  <p>100.000 VNĐ-
+                                      223.000 VNĐ</p>
+                              </div>
+                              <div class="clear"></div>
+                          </div> 
+                         
+                      </div>
+                  </div>
+                  <!-- shop2 -->
+                    <div class="shop so">
+                          <div class="imgshop">
+                              <img src="IMG/quan-ca-phe-vong-600x428.jpg"  alt="">
+                          </div>
+                          
+                         <div class="shop-body">
+                              <h3 class="shop-heading">
+                                  Cà phê Võng 126
+                              </h3>
+      
+                              <div class="info">
+                                  <div class="img-info">
+                                      <img src="IMG/direction-removebg-preview.png" alt="">
+                                  </div>
+                                  <div class="info-content">
+                                      <p>3.2km</p>
+                                  </div>
+                                  <div class="clear"></div>
+                                  <div class="img-info">
+                                      <img src="IMG/like-removebg-preview.png" alt="">
+                                  </div>
+                                  <div class="info-content">
+                                      <p>85.3% (17 đánh giá)</p>
+                                  </div>
+                                  <div class="clear"></div>
+                                  <div class="img-info">
+                                      <img src="IMG/money.PNG" height="58px" alt="">
+                                  </div>
+                                  <div class="info-content">
+                                      <p>100.000 VNĐ-
+                                          223.000 VNĐ</p>
+                                  </div>
+                                  <div class="clear"></div>
+                              </div> 
+                             
+                          </div>
+                      </div>
+                      <!-- shop3 -->
+                      <div class="shop so">
+                        <div class="imgshop">
+                            <img src="IMG/thailand-yes-coffee.jpg" alt="">
+                        </div>
+                        
+                       <div class="shop-body">
+                            <h3 class="shop-heading">
+                               Yes-Coffee KTX Khu A
+                            </h3>
+    
+                            <div class="info">
+                                <div class="img-info">
+                                    <img src="IMG/direction-removebg-preview.png" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <p>1.1km</p>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="img-info">
+                                    <img src="IMG/like-removebg-preview.png" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <p>100% (1 đánh giá)</p>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="img-info">
+                                    <img src="IMG/money.PNG" height="58px" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <p>100.000 VNĐ-
+                                        223.000 VNĐ</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div> 
+                           
+                        </div>
+                    </div>
+                    <!-- shop4 -->
+                    <div class="shop so">
+                        <div class="imgshop">
+                            <img src="IMG/98203469_2919741224809732_8240139630641414144_n.jpg" alt="">
+                        </div>
+                        
+                       <div class="shop-body">
+                            <h3 class="shop-heading">
+                               FEEL Coffee
+                            </h3>
+    
+                            <div class="info">
+                                <div class="img-info">
+                                    <img src="IMG/direction-removebg-preview.png" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <p>1.2km</p>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="img-info">
+                                    <img src="IMG/like-removebg-preview.png" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <p>93.9% (129 đánh giá)</p>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="img-info">
+                                    <img src="IMG/money.PNG" height="58px" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <p>100.000 VNĐ-
+                                        223.000 VNĐ</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div> 
+                           
+                        </div>
+                    </div>
+                    <!-- shop5 -->
+                    <div class="shop so">
+                        <div class="imgshop">
+                            <img src="IMG/fuse.jpg" alt="">
+                        </div>
+                        
+                       <div class="shop-body">
+                            <h3 class="shop-heading">
+                                Fuse Coffee & Acoustic
+                            </h3>
+    
+                            <div class="info">
+                                <div class="img-info">
+                                    <img src="IMG/direction-removebg-preview.png" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <p>1.5km</p>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="img-info">
+                                    <img src="IMG/like-removebg-preview.png" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <p>95.5% (148 đánh giá)</p>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="img-info">
+                                    <img src="IMG/money.PNG" height="58px" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <p>100.000 VNĐ-
+                                        223.000 VNĐ</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div> 
+                           
+                        </div>
+                    </div>
+                    <!-- shop6 -->
+                    <div class="shop so">
+                        <div class="imgshop">
+                            <img src="IMG/hong-tra-ngo-gia-3.jpg" alt="">
+                        </div>
+                        
+                       <div class="shop-body">
+                            <h3 class="shop-heading">
+                                Hồng Trà Ngô Gia
+                            </h3>
+    
+                            <div class="info">
+                                <div class="img-info">
+                                    <img src="IMG/direction-removebg-preview.png" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <p>1.65km</p>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="img-info">
+                                    <img src="IMG/like-removebg-preview.png" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <p>0% (0 đánh giá)</p>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="img-info">
+                                    <img src="IMG/money.PNG" height="58px" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <p>100.000 VNĐ-
+                                        223.000 VNĐ</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div> 
+                        </div>
+                    </div>
+                        <!-- shop7 -->
+                        <div class="shop so">
+                            <div class="imgshop">
+                                <img src="IMG/sky2.jpg" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                   Trà Sữa Sky 2
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>1.8km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>78% (246 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- shop8 -->
+                        <div class="shop so">
+                            <div class="imgshop">
+                                <img src="IMG/Napoli-Coffee-973-Nguyen-Anh-Thu.jpg" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                  Napoli Coffee
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>3.8km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100% (3 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- shop9 -->
+                        <div class="shop so">
+                            <div class="imgshop">
+                                <img src="IMG/sunco.jpg" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                   The Sun Coffee
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>0.35km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>88.8% (38 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- shop10 -->
+                        <div class="shop so">
+                            <div class="imgshop">
+                                <img src="IMG/285536009_3245562372428202_7690038399294839353_n.jpg" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                    Đông Du Tee
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>0.75km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>83.5% (105 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- shop11 -->
+                        <div class="shop so1">
+                            <div class="imgshop">
+                                <img src="IMG/foody-upload-api-foody-mobile-aaaaaa-191023164124.jpg" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                  BoHo Corner
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>3.2km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100% (17 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- shop12 -->
+                        <div class="shop so1">
+                            <div class="imgshop">
+                                <img src="IMG/thỉnan.jpg" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                    Coffee Thiên An
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>4.1km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>88% (45 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- shop13 -->
+                        <div class="shop so1">
+                            <div class="imgshop">
+                                <img src="IMG/file_restaurant_photo_bahp_16615-4da3b96d-220827163041.jpg" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                    Coffee & Tea 1989s
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>0.65km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>0% (0 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- shop14 -->
+                        <div class="shop so1">
+                            <div class="imgshop">
+                                <img src="IMG/here.jpg" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                    HERE tea cafe beer
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>0.6km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>87% (7 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- shop15 -->
+                        <div class="shop so1">
+                            <div class="imgshop">
+                                <img src="IMG/meowsta.png" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                    Meow's Station
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>0.8km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>97.9% (10 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                           <!-- shop16 -->
+                           <div class="shop so1">
+                            <div class="imgshop">
+                                <img src="IMG/file_restaurant_photo_ulv0_16210-951d35cf-210515122803.jpg" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                    Trà sữa Higogo làng đại học
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>0.5km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100% (5 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                           <!-- shop17 -->
+                           <div class="shop so1">
+                            <div class="imgshop">
+                                <img src="IMG/thiet-ke-quan-cafe-bida-1.jpg" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                    Café & Bida Phương Vy 1
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>1.2km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>96.4% (12 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                           <!-- shop18 -->
+                           <div class="shop so1">
+                            <div class="imgshop">
+                                <img src="IMG/huongcofffe.jpg" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                 Hương Cà Phé
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>4.2km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>96.8% (27 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                           <!-- shop19 -->
+                           <div class="shop so1">
+                            <div class="imgshop">
+                                <img src="IMG/huongdau.PNG" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                    Cà Phê Mang Bé Dâu
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>1.3km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>0% (0 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                           <!-- shop20 -->
+                           <div class="shop so1">
+                            <div class="imgshop">
+                                <img src="IMG/SaiGon.jpg" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                    Cà Phê Sài Gòn 7
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>3.5km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>98.8% (38 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                           <!-- shop21 -->
+                           <div class="shop so2">
+                            <div class="imgshop">
+                                <img src="IMG/pko.PNG" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                    Bus cafe 2
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>12.3km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>80% (31 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                           <!-- shop22 -->
+                           <div class="shop so2">
+                            <div class="imgshop">
+                                <img src="IMG/lehas-home-coffe-sai-gon-ivivu-7.jpg" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                    Cafe Nhạc Xưa
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>3.1km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>84% (40 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                         <!-- shop23 -->
+                         <div class="shop so2">
+                            <div class="imgshop">
+                                <img src="IMG/gannam.jpg" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                    Giangnam Coffee
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>3.6km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>90% (259 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                         <!-- shop24 -->
+                         <div class="shop so2">
+                            <div class="imgshop">
+                                <img src="IMG/tudd.jpg" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                    TUS Tạng
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>2.9km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>75.9% (31 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                         <!-- shop25 -->
+                         <div class="shop so2">
+                            <div class="imgshop">
+                                <img src="IMG/bam.jpg" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                    Bamboo Tea & Coffee
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>2.0km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>94% (25 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                         <!-- shop26 -->
+                         <div class="shop so2">
+                            <div class="imgshop">
+                                <img src="IMG/min.PNG" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                    MIN COFFEE
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>6.1km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>90% (26 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                         <!-- shop27 -->
+                         <div class="shop so2">
+                            <div class="imgshop">
+                                <img src="IMG/54e0f3cc9951500f0940.jpg" alt="">
+                            </div>
+                            
+                           <div class="shop-body">
+                                <h3 class="shop-heading">
+                                    Cafe Phươc Lạc Viên
+                                </h3>
+        
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="IMG/direction-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>5.8km</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/like-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>82.5% (20 đánh giá)</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="img-info">
+                                        <img src="IMG/money.PNG" height="58px" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <p>100.000 VNĐ-
+                                            223.000 VNĐ</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div> 
+                            </div>
+                        </div>
+                  </div>
+            
+    
+<!-- map -->
+                  <div id="map">
+                    
+                  </div>
+                  <div class="clear"></div>
+
+                </div>
+           
+            <div id="arrow">
+                <div id="left">
+                    <div class="chip"  >
+                        <
+                       </div> 
+                </div>
+                <div id="c1" class="number1">
+                    <div style ="background-color:red;" class="chip1" >
+                        1
+                       </div> 
+                </div>
+                <div class="number1">
+                    <div id="c2" class="chip1" >
+                        2
+                       </div> 
+                </div>
+                <div id="c3" class="number1">
+                    <div class="chip1" >
+                        3
+                       </div> 
+                </div>
+                <div class="number1">
+                    <div class="chip1" >
+                       4
+                       </div> 
+                </div>
+                <div class="number1">
+                    <div class="chip1" >
+                        5
+                       </div> 
+                </div>
+                <div class="number1">
+                    <div class="chip1" >
+                        6
+                       </div> 
+                </div>
+                <div class="number1">
+                    <div class="chip1" >
+                        7
+                       </div> 
+                </div>
+                <div class="number1">
+                    <div class="chip1" >
+                        8
+                       </div> 
+                </div>
+        
+               <div id="right">
+                <div  class="chip" >
+                    >
+                  </div>
+               </div>
+                   
+               <div class="clear"></div>
+            </div>
+        </div>  
+        </div>
+        <div id="footer">
+            <div id="logo-footer">
+            
+            </div>
+
+        </div>
+    </div>
+    
+    </div>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="Leaflet.GeometryUtil/src/leaflet.geometryutil.js"></script>
+    <script src="main.js"> </script> 
+  
+    <div id="modal">
+        <div class="modal-container">
+            <div class="modal-heading">
+                <h2>Khuyến mãi ở gần</h2>
+                <div class="close">
+                 <img id="hax" src="IMG/close1-removebg-preview.png" alt="">
+                </div>
+                <div class="clear"></div>
+            </div>
+            <hr  width="100%" color="black"/>
+           
+            <div class="modal-body">
+                <!-- quán 1 -->
+              <div class="khuyenmai">
+               <div class="km1">
+                <h4 class="head">
+                    Fuse Coffee & Acoustic
+                </h4>
+                <p>
+                    Giảm giá 20% với mọi loại thức uống 
+                </p>
+               </div>
+               <hr  width="100%" color="black"/>
+              </div>
+              <!-- quán 2 -->
+              <div class="khuyenmai">
+                <div class="km1">
+                 <h4 class="head">
+                     Cà Phê Thị (cơ sở 2)
+                 </h4>
+                 <p>
+                     Giảm giá 30% tổng giá trị đơn hàng khi mua 2 ly trở lên
+                 </p>
+                </div>
+                <hr  width="100%" color="black"/>
+               </div>
+               <!-- quán 3 -->
+               <div class="khuyenmai">
+                <div class="km1">
+                 <h4 class="head">
+                     The Sun coffee
+                 </h4>
+                 <p>
+                     Giảm giá 50% trà sữa trân châu đường đen  
+                 </p>
+                </div>
+                
+               </div>
+            </div>
+          
+            </div>
+        </div>
+    </div>
+</body>
+</html>

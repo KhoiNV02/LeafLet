@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Icon/themify-icons-font/themify-icons/themify-icons.css">
+ 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script> 
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <img src="img/Capture-removebg-preview.png" alt="" height="">
+        </div>
+
+        <div id="nav">
+            <ul class="navi">
+                <li><a href="">
+                    <div class="icon">
+                        <img src="IMG/home-removebg-preview.png" alt="" style="position: relative; top:5px;" >
+                    </div>
+                    <div class="name">
+                        <p>Home Page</p>
+                    </div>
+                </a></li>
+                <li><a href="">
+                    <div class="icon">
+                        <img src="img/search-removebg-preview.png"  alt="" >
+                    </div>
+                    <div class="name">
+                        <p style="padding-top: 10px;">Trip ideas</p>
+                    </div>
+                </a></li>
+                <li><a href="">
+                    <div class="icon">
+                        <img src="img/tourguide-removebg-preview.png" alt="">
+                    </div>
+                    <div class="name">
+                        <p>Tour Guide</p>
+                    </div>
+                </a></li>
+                <li><a href="">
+                    <div class="icon">
+                        <img src="img/journey-removebg-preview.png" alt="">
+                    </div>
+                    <div class="name">
+                        <p>Journey</p>
+                    </div>
+                </a></li>
+            </ul>       
+            
+        </div>
+
+        <div id="avatar">
+
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div id="personal">
+        <div class="information">
+            <div id="background">
+            </div>
+            <div id="ava">
+    
+            </div>
+            <div id="descript">
+                <div id="nameshop">
+                    <h3>cà phê Thị</h3>
+                </div>
+                <div class="img-info">
+                    <img src="IMG/direction-removebg-preview.png" alt="">
+                </div>
+                <div class="info-content">
+                    <p>3km</p>
+                </div>
+                <div class="clear"></div>
+                <div class="img-info">
+                    <img src="IMG/like-removebg-preview.png" alt="">
+                </div>
+                <div class="info-content">
+                    <p class="ssp">93.9% (33 đánh giá) <a href="">xem tất cả</a></p>
+                </div>
+                <div class="clear"></div>
+               
+            </div>
+          <div id="descript2">
+            <div class="img-info">
+                <img src="IMG/money.PNG" height="58px" alt="">
+            </div>
+            <div class="info-content">
+                <p>100.000 VNĐ-
+                    223.000 VNĐ</p>
+            </div>
+            <div class="chip">
+             <i class="ti-star"></i> <span class="rating1">Đánh giá Cửa hàng</span>    
+              </div>
+            <div class="clear"></div>
+          </div>
+          <div id="loca">
+            <div class="img-info">
+                <img src="IMG/gogo.PNG" height="58px" alt="">
+            </div>
+            <div class="info-content">
+             <a href="https://www.google.com/maps/dir/10.8753007,106.806438/Cafe+Th%E1%BB%8B+(C%C6%A1+s%E1%BB%9F+2),+6+Nguy%E1%BB%85n+Hi%E1%BB%81n,+%C4%90%C3%B4ng+Ho%C3%A0,+D%C4%A9+An,+B%C3%ACnh+D%C6%B0%C6%A1ng,+Vi%E1%BB%87t+Nam/@10.8751488,106.8046277,17z/data=!3m1!4b1!4m18!1m7!3m6!1s0x3174d96433d3991d:0x82b3626d2987c576!2zQ2FmZSBUaOG7iyAoQ8ahIHPhu58gMik!8m2!3d10.8751518!4d106.8079672!16s%2Fg%2F11jn46qx_s!4m9!1m1!4e1!1m5!1m1!1s0x3174d96433d3991d:0x82b3626d2987c576!2m2!1d106.8079827!2d10.8751522!3e0?hl=vi-VN">  <p>
+                6 Nguyễn Hiền, Đông Hoà, Dĩ An, Bình Dương</p></a>  
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+    <div id="space">
+        <div id="intro-imgshop">
+            <div class="intro">
+                <h2 >Món trà xanh Matcha mới</h2>
+                <hr  width="100%" color="black"/>
+            
+                
+                <div class="iconshop">
+                  
+                </div>
+                <hr  width="100%" color="black"/>
+                <p>
+                    Quán ra mắt món mới, trà sữa Matcha có hương vị tuyệt vời, giá cả lại rẻ, chỉ từ 30.000 VNĐ cho một ly 
+                </p>
+            </div>
+           
+            
+      
+        </div>
+         <!-- món2 -->
+        <div id="intro-imgshop">
+            <div class="intro">
+                <h2 >Món trà xanh Matcha mới</h2>
+                <hr  width="100%" color="black"/>
+            
+                
+                <div class="iconshop">
+                  
+                </div>
+                <hr  width="100%" color="black"/>
+                <p>
+                    Quán ra mắt món mới, trà sữa Matcha có hương vị tuyệt vời, giá cả lại rẻ, chỉ từ 30.000 VNĐ cho một ly 
+                </p>
+            </div>
+        </div>
+        <!-- món 3 -->
+        <div id="intro-imgshop">
+            <div class="intro">
+                <h2 >Món trà xanh Matcha mới</h2>
+                <hr  width="100%" color="black"/>
+            
+                
+                <div class="iconshop">
+                  
+                </div>
+                <hr  width="100%" color="black"/>
+                <p>
+                    Quán ra mắt món mới, trà sữa Matcha có hương vị tuyệt vời, giá cả lại rẻ, chỉ từ 30.000 VNĐ cho một ly 
+                </p>
+            </div>
+        </div>
+        <!-- món 4 -->
+        <div id="intro-imgshop">
+            <div class="intro">
+                <h2 >Món trà xanh Matcha mới</h2>
+                <hr  width="100%" color="black"/>
+            
+                
+                <div class="iconshop">
+                  
+                </div>
+                <hr  width="100%" color="black"/>
+                <p>
+                    Quán ra mắt món mới, trà sữa Matcha có hương vị tuyệt vời, giá cả lại rẻ, chỉ từ 30.000 VNĐ cho một ly 
+                </p>
+            </div>
+        </div>
+        <!-- món 5 -->
+        <div id="intro-imgshop">
+            <div class="intro">
+                <h2 >Món trà xanh Matcha mới</h2>
+                <hr  width="100%" color="black"/>
+            
+                
+                <div class="iconshop">
+                  
+                </div>
+                <hr  width="100%" color="black"/>
+                <p>
+                    Quán ra mắt món mới, trà sữa Matcha có hương vị tuyệt vời, giá cả lại rẻ, chỉ từ 30.000 VNĐ cho một ly 
+                </p>
+            </div>
+        </div>
+        <!-- món 6 -->
+        <div id="intro-imgshop">
+            <div class="intro">
+                <h2 >Món trà xanh Matcha mới</h2>
+                <hr  width="100%" color="black"/>
+            
+                
+                <div class="iconshop">
+                  
+                </div>
+                <hr  width="100%" color="black"/>
+                <p>
+                    Quán ra mắt món mới, trà sữa Matcha có hương vị tuyệt vời, giá cả lại rẻ, chỉ từ 30.000 VNĐ cho một ly 
+                </p>
+            </div>
+        </div>
+        <!-- món 7 -->
+        <div id="intro-imgshop">
+            <div class="intro">
+                <h2 >Món trà xanh Matcha mới</h2>
+                <hr  width="100%" color="black"/>
+            
+                
+                <div class="iconshop">
+                  
+                </div>
+                <hr  width="100%" color="black"/>
+                <p>
+                    Quán ra mắt món mới, trà sữa Matcha có hương vị tuyệt vời, giá cả lại rẻ, chỉ từ 30.000 VNĐ cho một ly 
+                </p>
+            </div>
+        </div>
+        <!-- món 8 -->
+        <div id="intro-imgshop">
+            <div class="intro">
+                <h2 >Món trà xanh Matcha mới</h2>
+                <hr  width="100%" color="black"/>
+            
+                
+                <div class="iconshop">
+                  
+                </div>
+                <hr  width="100%" color="black"/>
+                <p>
+                    Quán ra mắt món mới, trà sữa Matcha có hương vị tuyệt vời, giá cả lại rẻ, chỉ từ 30.000 VNĐ cho một ly 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mid">
+    <div id="arrow">
+        <div id="left">
+            <div class="chip"  >
+                <
+               </div> 
+        </div>
+        <div class="number1">
+            <div class="chip1" >
+                1
+               </div> 
+        </div>
+        <div class="number1">
+            <div class="chip1" >
+                2
+               </div> 
+        </div>
+        <div class="number1">
+            <div class="chip1" >
+                3
+               </div> 
+        </div>
+        <div class="number1">
+            <div class="chip1" >
+               4
+               </div> 
+        </div>
+        <div class="number1">
+            <div class="chip1" >
+                5
+               </div> 
+        </div>
+        <div class="number1">
+            <div class="chip1" >
+                6
+               </div> 
+        </div>
+        <div class="number1">
+            <div class="chip1" >
+                7
+               </div> 
+        </div>
+        <div class="number1">
+            <div class="chip1" >
+                8
+               </div> 
+        </div>
+
+       <div id="right">
+        <div  class="chip" >
+            >
+          </div>
+       </div>
+           
+       <div class="clear"></div>
+    </div>
+</div>  
+        
+</div>
+
+<div id="modal">
+    <div class="modal-container">
+        <div class="modal-heading">
+            <h2>Đánh giá</h2>
+            <div class="close">
+             <img src="IMG/close1-removebg-preview.png" alt="">
+            </div>
+            <div class="clear"></div>
+        </div>
+        <hr  width="100%" color="black"/>
+        <div class="modal-body">
+            <div class="rating">
+            <li class="rate"><i class="ti-star"></i></li>
+            <li class="rate"><i class="ti-star"></i></li>
+            <li class="rate"><i class="ti-star"></i></li>
+            <li class="rate"><i class="ti-star"></i></li>
+            <li class="rate"><i class="ti-star"></i></li>   
+        </div>
+        <div class="comment">
+            <!-- <input type="text" TextMode="MultiLine" placeholder="hãy nhập đánh giá của bạn vào ô này"> -->
+            <textarea name="txtComment" id="txtComment" rows="5" cols="20" placeholder="Hãy nhập đánh giá của bạn vào ô này"></textarea>
+        </div>
+        <div class="label">
+            <div class="chip2">
+                <p> Hài lòng</p>   
+                <img src="IMG/lover-removebg-preview.png" alt="">
+                 </div>
+        </div>
+        <div class="label">
+            <div class="chip3">
+                <p> Ko hài lòng</p>   
+                <img src="IMG/nah-removebg-preview.png" alt="">
+                 </div>
+        </div>
+        <div class="label">
+            <div class="chip3">
+                <p>Phục vụ tệ</p>   
+                <img src="IMG/angry-removebg-preview.png" alt="">
+                 </div>
+        </div>
+        <div class="label">
+            <div class="chip3">
+                <p>Quá đắt</p>   
+                <img src="IMG/sad-removebg-preview.png" alt="">
+                 </div>
+        </div>
+        <div class="label1">
+            <div class="chip4">
+                <p>Nhân viên tuyệt vời</p>   
+                <img src="IMG/oke-removebg-preview.png" alt="">
+                 </div>
+        </div>
+        <div class="submit">
+            <button>
+                Hoàn Thành
+            </button>
+        </div>
+      
+        </div>
+    </div>
+</div>
+
+<script src="main2.js"></script> 
+</body>
+</html>
